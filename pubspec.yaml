@@ -1,8 +1,8 @@
 name: imm_flutter
-description: "imm_flutter is a Flutter package that simplifies the integration of KIPPs AI chatbot into your applications. With just a few lines of code, you can add a chatbot icon to your app, fetch a custom chatbot icon from an API, and display an interactive chatbot in a bottom sheet. The package handles all the complexities, allowing you to focus on creating engaging user experiences. Ideal for adding instant customer support and user interaction features to your Flutter apps."
+description: "imm_flutter is a Flutter package that simplifies the integration of KIPPs AI chatbot into your applications."
 
-version: 0.1.1
-homepage: https://github.com/ishita1226/test_package.git
+version: 0.1.3
+homepage: https://github.com/KIPPS-AI/kipps-flutter.git
 
 environment:
   sdk: '>=3.3.0 <4.0.0'

@@ -31,7 +31,8 @@ class ChatbotIntegrationState extends State<ChatbotIntegration> {
   }
 
   Future<void> _fetchChatIcon() async {
-    final response = await http.get(Uri.parse('https://backend.kipps.ai/kipps/chatbot/${widget.chatbotId}'));
+    final response = await http.get(Uri.parse(
+        'https://backend.kipps.ai/kipps/chatbot/${widget.chatbotId}'));
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       setState(() {
@@ -84,11 +85,11 @@ class ChatbotIntegrationState extends State<ChatbotIntegration> {
     return CircleAvatar(
       // radius: 30,
       child: FloatingActionButton(
-        onPressed: () => _showChatbotModal(context),
-        child: _chatIconUrl != null
-            ? Image.network(_chatIconUrl!)
-            : Image.network('https://chatx-ai-dev.s3.amazonaws.com/Primary.png')
-      ),
+          onPressed: () => _showChatbotModal(context),
+          child: _chatIconUrl != null
+              ? Image.network(_chatIconUrl!)
+              : Image.network(
+                  'https://chatx-ai-dev.s3.amazonaws.com/Primary.png')),
     );
   }
 }

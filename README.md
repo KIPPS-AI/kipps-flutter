@@ -23,10 +23,8 @@ Prerequisites for using this package are:
 Flutter installed
 Basic knowledge of flutter development.
 
-## Usage
-
-
-
+## Example
+Go throught Example tag and add
 
 
 ## Additional information
