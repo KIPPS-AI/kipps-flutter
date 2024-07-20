@@ -24,12 +24,16 @@ Flutter installed
 Basic knowledge of flutter development.
 
 ## Example
-Go throught Example tag and add
+Go through Example tag and add your specific chatBotId.
 
 
 ## Additional information
 
-Here I tried integrating kipps.ai chatBot model.
+As you have seen in example also, simply add the chatBotId in:
+floatingActionButton:
+ChatbotIntegration(chatbotId: '<chatBotId>'),
+);
+
 
 
 
