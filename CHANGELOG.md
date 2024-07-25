@@ -1,4 +1,4 @@
-## 0.1.4
+## 1.0.0
 
 
 * Can help in calling the KIPPs AI ChatBot in a flutter application.

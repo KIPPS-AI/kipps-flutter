@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:imm_flutter/imm_flutter.dart';
+import 'package:kipps_chatbot/kipps_chatbot.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       floatingActionButton:
-          ChatbotIntegration(chatbotId: '868aafc1-74b3-4c44-93ec-8fac3b4b7cf3'),
+          ChatbotIntegration(chatbotId: '<your chaatbotId>'),
     );
   }
 }
