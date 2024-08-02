@@ -11,6 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
+![KIPPs AI](https://drive.google.com/file/d/1pj7GuojOpp6gICvO9irJuiPV4lYDZ1KG/view?usp=sharing)
+
 This package helps to envoke a ChatBot on the application.
 
 ## Features
@@ -26,13 +28,38 @@ Basic knowledge of flutter development.
 ## Example
 Go through Example tag and add your specific chatBotId.
 
+## Flutter Integration
 
-## Additional information
+Go to Installation Section and Get to know about installing precedure of this package in your project.
+Also navigate to the blog [Building an AI ChatBot in Flutter](https://medium.com/kipps-ai/building-a-kipps-ai-chatbot-in-flutter-4bb3a71f200e) for detailed and step-by-step guide.
 
-As you have seen in example also, simply add the chatBotId in:
-floatingActionButton:
-ChatbotIntegration(chatbotId: '<chatBotId>'),
-);
+For a sample code visit Example setion of the package.
+
+
+## Installation
+ Add kipps_chatbot as a [dependency in your pubspec.yaml file](https://docs.flutter.dev/packages-and-plugins/using-packages).
+
+ Installation- Web support
+  To make it work properly on the Web platform, you need to add the web_support.js file inside the <head> of your web/index.html file:
+ 
+  ```
+  <head>
+    <!-- ... -->
+    <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+    <!-- ... -->
+  </head>
+  ```
+
+  ## Multi-Screen Integration
+
+    Facing difficulty in integrating package in your multi-screen applications. 
+    Visit the blog: 
+    [Multi-screen Flutter app](https://medium.com/kipps-ai/integrating-kipps-ai-chatbot-in-a-multi-screen-flutter-app-4c85f44290da) for sample code.
+
+ 
+
+
+
 
 
 
