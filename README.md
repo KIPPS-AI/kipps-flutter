@@ -48,10 +48,9 @@ For a sample code visit Example setion of the package.
     <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
     <!-- ... -->
   </head>
-
+  ```
 
   ## Multi-Screen Integration
-
     Facing difficulty in integrating package in your multi-screen applications. 
     Visit the blog: 
     [Multi-screen Flutter app](https://medium.com/kipps-ai/integrating-kipps-ai-chatbot-in-a-multi-screen-flutter-app-4c85f44290da) for sample code.
