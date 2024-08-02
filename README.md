@@ -33,9 +33,7 @@ For a sample code visit Example setion of the package.
 ## Multi-Screen Integration
 
 Facing difficulty in integrating package in your multi-screen applications. 
-
-    Visit the blog: 
-    [Multi-screen Flutter app](https://medium.com/kipps-ai/integrating-kipps-ai-chatbot-in-a-multi-screen-flutter-app-4c85f44290da) for sample code.
+Visit the blog: [Multi-screen Flutter app](https://medium.com/kipps-ai/integrating-kipps-ai-chatbot-in-a-multi-screen-flutter-app-4c85f44290da) for sample code.
 
 
 ## Installation
