@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-![KIPPs AI](https://drive.google.com/file/d/1pj7GuojOpp6gICvO9irJuiPV4lYDZ1KG/view?usp=sharing)
+<!-- ![KIPPs AI](https://drive.google.com/file/d/1pj7GuojOpp6gICvO9irJuiPV4lYDZ1KG/view?usp=sharing) -->
 
 This package helps to envoke a ChatBot on the application.
 
@@ -48,7 +48,7 @@ For a sample code visit Example setion of the package.
     <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
     <!-- ... -->
   </head>
-  ```
+
 
   ## Multi-Screen Integration
 
