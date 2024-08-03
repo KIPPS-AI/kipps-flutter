@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:http/http.dart' as http;
@@ -91,79 +90,79 @@ class ChatbotIntegrationState extends State<ChatbotIntegration> {
   }
 
   void _showChatbotOverlay(BuildContext context) {
-  _overlayEntry = OverlayEntry(
-    builder: (context) => Stack(
-      children: [
-        Positioned.fill(
-          child: GestureDetector(
-            onTap: () {
-              _overlayEntry?.remove();
-              _overlayEntry = null;
-              setState(() {});
-            },
-            child: Container(
-              color: Colors.black54,
+    _overlayEntry = OverlayEntry(
+      builder: (context) => Stack(
+        children: [
+          Positioned.fill(
+            child: GestureDetector(
+              onTap: () {
+                _overlayEntry?.remove();
+                _overlayEntry = null;
+                setState(() {});
+              },
+              child: Container(
+                color: Colors.black54,
+              ),
             ),
           ),
-        ),
-        Positioned(
-          bottom: 70,
-          right: 20,
-          child: Material(
-            elevation: 8.0,
-            color: Colors.transparent,
-            child: Stack(
-              children: [
-                Container(
-                  width: 400,
-                  height: 600,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 10.0,
-                        spreadRadius: 2.0,
-                      ),
-                    ],
-                  ),
-                  child: InAppWebView(
-                    initialUrlRequest: URLRequest(url: _chatbotUrl),
-                    initialSettings: InAppWebViewSettings(
-                      javaScriptEnabled: true,
+          Positioned(
+            bottom: 70,
+            right: 20,
+            child: Material(
+              elevation: 8.0,
+              color: Colors.transparent,
+              child: Stack(
+                children: [
+                  Container(
+                    width: 400,
+                    height: 600,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black26,
+                          blurRadius: 10.0,
+                          spreadRadius: 2.0,
+                        ),
+                      ],
                     ),
-                  ),
-                ),
-                Positioned(
-                  top: 10,
-                  right: 10,
-                  child: GestureDetector(
-                    onTap: () {
-                      _overlayEntry?.remove();
-                      _overlayEntry = null;
-                      setState(() {});
-                    },
-                    child: const CircleAvatar(
-                      radius: 15,
-                      backgroundColor: Colors.black,
-                      child: Icon(
-                        Icons.close,
-                        color: Colors.white,
+                    child: InAppWebView(
+                      initialUrlRequest: URLRequest(url: _chatbotUrl),
+                      initialSettings: InAppWebViewSettings(
+                        javaScriptEnabled: true,
                       ),
                     ),
                   ),
-                ),
-              ],
+                  Positioned(
+                    top: 10,
+                    right: 10,
+                    child: GestureDetector(
+                      onTap: () {
+                        _overlayEntry?.remove();
+                        _overlayEntry = null;
+                        setState(() {});
+                      },
+                      child: const CircleAvatar(
+                        radius: 15,
+                        backgroundColor: Colors.black,
+                        child: Icon(
+                          Icons.close,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-      ],
-    ),
-  );
+        ],
+      ),
+    );
 
-  Overlay.of(context).insert(_overlayEntry!);
-}
+    Overlay.of(context).insert(_overlayEntry!);
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 name: kipps_chatbot
 description: "kipps_chatbot is a Flutter package that simplifies the integration of KIPPs AI chatbot into your applications."
 
-version: 1.0.0
+version: 1.2.0
 homepage: https://github.com/KIPPS-AI/kipps-flutter.git
 
 environment:
